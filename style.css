@@ -36,7 +36,7 @@ h1 {
     box-shadow:     15px 15px #fff,    125px 35px #fff,    50px 80px #fff;
 }
  
-.Start {
+.start {
     color: #FFFFFF;
     background-color: #000000;
     justify-content: center;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .conta-existente {
-    top: 60%;
+    top: 62%;
     left: 47%;
     color: #FFFFFF;
     position: fixed;
