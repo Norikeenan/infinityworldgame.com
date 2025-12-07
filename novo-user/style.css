@@ -1,3 +1,43 @@
 * {
-    background-color: black;
+    margin: 0;
+}
+body{
+    background: radial-gradient( ellipse at center, #2c044d 0%, /* Roxo escuro */ #130129 70%, /* Roxo muito escuro */ #000000 100% /* Preto na borda */);
+    min-height: 100vh;
+}
+.insira-nome{
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    display: flex; 
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    gap: 15px;
+}
+/*Selecionando input especifico da pagina*/
+input[type="text"]{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 16px;
+    /* Espacinho interno */
+    padding: 10px 5px; 
+    /* Tira aquela borda azul quando clica */
+    outline: none; 
+    /* Ocupa a largura do pai (.campo-formulario) */
+    width: 100%;
+}
+input[type="text"]:focus {
+    /* A linha de baixo fica branca brilhante */
+    border-bottom-color: white;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+::selection {
+    background-color: #ff00ff; /* Fundo Rosa Neon */
+    color: white;
 }
