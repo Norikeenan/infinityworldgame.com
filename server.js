@@ -29,6 +29,18 @@ db.connect((err) => {
 
 // --- ROTAS (O Cérebro) ---
 
+//rota principal do site
+// Adicione isso se não tiver:
+const path = require('path');
+
+
+app.use(express.static('public'));
+
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Rota de Cadastro de Jogador
 //Entrega do HTML
  app.get('/registro', (req, res) => {
