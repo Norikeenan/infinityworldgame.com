@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 // Rota de Cadastro de Jogador
 //Entrega do HTML
  app.get('/registro', (req, res) => {
-    res.sendFile(pach.join(__dirname, 'public', 'novo-user', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'novo-user', 'index.html'));
  });
   //Salvar no Banco
  app.post('/registrar', (req, res) => {
