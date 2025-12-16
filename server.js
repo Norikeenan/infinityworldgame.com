@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
 
-const db = mysql.createConnection({
+const connection = mysql.createConnection({
     // O comando "process.env.VARIAVEL" tenta pegar o valor da nuvem.
     // O "||" significa "OU". Se não achar na nuvem, usa o valor fixo (seu PC).
     host: process.env.MYSQLHOST || 'localhost',
@@ -19,7 +19,7 @@ const db = mysql.createConnection({
     port: process.env.MYSQLPORT || 3306
 });
 
-db.connect((err) => {
+connection.connect((err) => {
     if (err) {
         console.error('Erro ao conectar no MySQL:', err);
     } else {
