@@ -1,4 +1,5 @@
- async function enviarRegistro() {
+ async function enviarRegistro(event) {
+    event.preventDefault();
     const nickname = document.getElementById('nicknameInput').ariaValueMax;
 
     if(!nickname) {
