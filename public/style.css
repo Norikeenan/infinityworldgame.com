@@ -1,18 +1,21 @@
 /* Configurações Gerais do Site */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 *{
     margin: 0;
 }
 body{
     /*Plano de Fundo*/
-   background: radial-gradient( ellipse at center, #2c044d 0%, /* Roxo escuro */ #130129 70%, /* Roxo muito escuro */ #000000 100% /* Preto na borda */);
+   background: radial-gradient( ellipse at center, #2C044D 0%, /* Roxo escuro */ #130129 78%, /* Roxo muito escuro */ #000000 100% /* Preto na borda */);
 }
 h1 {
     color: #FFFFFF; 
-    font-family: Arial, sans-serif; 
+    font-family: "VT323", monospace;
     overflow: hidden;
-    margin-bottom: 50px;
     padding: 0 20px;
-    line-height: 1.2
+    line-height: 2.5rem;
+    font-size: 50px;
+    letter-spacing: 3%;
+    font-weight: 400;
 }
 
 .container {  
@@ -36,16 +39,25 @@ h1 {
     background-color: #000000;
     font-size: 25px;
     /*borda do botão*/
-    border-radius: 10%;
+    border-radius: 12px;
     border-color: #2c044d;
     border: 2px solid #ccc;
     cursor: pointer;
+    font-family: "VT323", monospace;
+    width: 328px;
+    height: 58px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 31px;
 }
 
 .conta-existente {
     color: #FFFFFF;
     font-size: 20px;
     text-decoration: underline;
+    font-family: "VT323", monospace;
+    font-size: 30px;
+    font-weight: 400;
 
 }
 
@@ -53,7 +65,7 @@ h1 {
     display: flex;
     flex-direction: column; /* Botão em cima, link embaixo */
     align-items: center;
-    gap: 20px
+    gap: 31px;
 }
 
 .boas-vindas{
