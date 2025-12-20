@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
     margin: 0;
 }
 body{
     background: radial-gradient( ellipse at center, #2c044d 0%, /* Roxo escuro */ #130129 70%, /* Roxo muito escuro */ #000000 100% /* Preto na borda */);
     min-height: 100vh;
+   
 }
-.insira-nome{
+.insira-nome h1 {
+    font-weight: 400;
+    font-family: "VT323", monospace; /* A fonte pixelada */
+    font-size: 40px; /* 50px estava muito grande, 40px fica melhor */
+    margin-bottom: 28px;
+    text-align: center;
+    line-height: 1.1; 
     color: #fff;
-    top: 50%;
-    left: 50%;
-    position: fixed;
-    display: flex; 
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    gap: 15px;
 }
+
 /*Selecionando input especifico da pagina*/
 input[type="text"]{
     background: transparent;
@@ -28,16 +31,59 @@ input[type="text"]{
     outline: none; 
     /* Ocupa a largura do pai (.campo-formulario) */
     width: 100%;
+    font-family: "VT323", monospace;
 }
 input[type="text"]:focus {
     /* A linha de baixo fica branca brilhante */
-    border-bottom-color: white;
+    border-bottom-color: #00ff00;
+    text-align: center;
+    font-size: 30px;
 }
 
 ::placeholder {
     color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 30px;
 }
 ::selection {
     background-color: #ff00ff; /* Fundo Rosa Neon */
     color: white;
+}
+
+.botao{
+    font-family: "VT323", monospace;
+    background-color: #000000;
+    color: #fff;
+    height: 67px;
+    font-size: 50px;
+    font-weight: 400;
+    display: inline-block;
+    white-space: nowrap;
+    width: 328px;
+    border-radius: 12px;
+}
+
+.insira-nome{
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .insira-nome {
+        width: 90%; /* O container ocupa 90% da tela, deixando margem */
+    }
+
+    .botao {
+        width: 80%; 
+        font-size: 30px; 
+        height: auto; 
+        padding: 15px;
+    }
 }
