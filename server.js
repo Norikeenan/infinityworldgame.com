@@ -81,5 +81,5 @@ app.post('/registro', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor rodando! Acesse: http://localhost:${PORT}`);
+    console.log(`🚀 SERVIDOR VERSÃO 2.0 RODANDO na porta ${PORT}`);
 });
