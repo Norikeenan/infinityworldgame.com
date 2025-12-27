@@ -67,7 +67,7 @@ async function finalizarRegistro() {
         const response = await fetch('/registro', {
             method: 'POST',
             headers: { 'Content-Type' : 'application/json' },
-            body: JSON.string ({
+            body: JSON.stringify ({
                 nickname: nicknameGuardado,
                 password: valorSenha
             })
