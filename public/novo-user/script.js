@@ -69,7 +69,7 @@ async function finalizarRegistro() {
             headers: { 'Content-Type' : 'application/json' },
             body: JSON.string ({
                 nickname: nicknameGuardado,
-                password: vlaorSenha
+                password: valorSenha
             })
         });
         if (response.ok) {
